@@ -13,6 +13,12 @@
     <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
     <!--  -->
     <!--  -->
+    <!-- icon -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
     <!-- css -->
     <link
       href="/dist/output.css"
@@ -32,119 +38,300 @@
     <title>IQBAL PORTO</title>
   </head>
   <body class="bg-primary font-blog">
-    <header class="h-32 w-screen bg-primary flex justify-between items-center px-40">
-      <div class="text-white text-5xl">
-        <h1>gambar</h1>
-      </div>
-      <div class="flex gap-4">
-        <ul class="text-white flex gap-4 items-center font-bold">
-          <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500">About Me</li>
-          <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500"">Services</li>
-          <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500"">Portfolio</li>
-          <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500"">Blog</li>
-          <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500"">Contact Us</li>
-        </ul>
-        <div class="bg-red-500 px-3 py-2 font-extrabold">
-          <h5>Download CV</h5>
+    <!-- header start -->
+    <header class="w-full h-auto relative">
+      <div class="w-full h-20 px-5 top-0 lg:h-40 md:px-14 bg-primary/60 flex justify-between items-center lg:px-40 fixed">
+        <div class="text-white text-lg lg:text-5xl">
+          <img
+            src="/src/img/logo.png"
+            alt=""
+            class="w-20 h-10 lg:w-32 lg:h-14 shadow-md" />
+        </div>
+        <div class="justify-end">
+          <i class="fa-solid fa-bars h-8 w-8 md:hidden text-white"></i>
+        </div>
+        <div class="hidden md:flex md:gap-4">
+          <ul class="text-white flex gap-4 items-center font-bold">
+            <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500">About Me</li>
+            <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500">Services</li>
+            <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500">Portfolio</li>
+            <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500">Blog</li>
+            <li class="px-3 py-2 hover:rounded-sm hover:bg-red-500">Contact Us</li>
+          </ul>
+          <span class="bg-red-500 px-3 py-2 font-extrabold">
+            <h5>Download CV</h5>
+          </span>
         </div>
       </div>
-    </header>
-    <main>
       <!-- bio start -->
-      <section class="px-40 py-24">
-        <div class="">
-          <span class="bg-red-950 text-white px-3 py-2 text-2xl font-semibold">WELCOME I'M</span>
-          <h1 class="font-judul font-extrabold text-7xl text-white tracking-wide pt-7">Rajiph Iqbal Ghandi</h1>
-          <h2 class="font-blog text-2xl tracking-wider text-white">Fullstack Developer</h2>
-          <div class="w-1/2 h-52 flex items-center">
-            <p class="text-white text-lg">
+      <section class="w-full mt-20 md:mt-5 lg:mt-0 h-screen px-5 md:px-14 lg:px-40 lg:min-h-screen flex flex-col justify-center lg:flex-row lg:pt-44">
+        <div class="w-full h-full lg:w-1/2 flex justify-end lg:justify-center flex-col">
+          <div class="md:inline">
+            <span class="bg-red-900 text-white px-3 py-2 text-lg md:text-xl font-semibold lg:text-2xl">Welcome! I'M</span>
+          </div>
+          <h1 class="font-judul font-extrabold text-4xl md:text-6xl text-white tracking-wide pt-5 xl:7xl">Rajiph Iqbal Ghandi</h1>
+          <h2 class="font-blog text-xl md:text-xl tracking-wider text-white lg:text-2xl">Fullstack Developer</h2>
+          <div class="w-full py-5">
+            <p class="text-white text-base md:text-lg">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, rerum accusamus qui ipsa sapiente, minus perferendis recusandae delectus placeat minima quisquam saepe nihil obcaecati quas, ullam laboriosam odio tempore
               deserunt.
             </p>
           </div>
         </div>
+        <div class="w-full h-full lg:w-1/2 flex justify-center items-center bg-primary">
+          <p>gambar</p>
+        </div>
       </section>
       <!-- bio end -->
+    </header>
+    <!-- header -->
+    <!-- service start -->
+    <section class="w-full h-32 md:h-52 lg:h-80 bg-slate-500 flex justify-center items-center gap-3 lg:gap-10">
+      <div class="w-1/5 lg:w-1/6 h-2/3 border-dashed border-2 border-red-500 flex flex-col justify-center items-center rounded-se-3xl md:rounded-se-[50px] relative">
+        <img
+          src="img/trophy.png"
+          width="100%"
+          height="100%"
+          alt=""
+          class="bg-red-500 p-2 absolute h-8 w-8 md:h-10 md:w-10 lg:h-16 lg:w-16 -top-5 left-3 md:-top-5 md:left-5 lg:-top-8 lg:left-10 rounded-lg fill-white" />
+        <h1 class="text-white font-extrabold text-xl md:text-6xl font-blog">03</h1>
+        <h3 class="text-white font-bold text-sm md:text-xl font-blog">Awards</h3>
+      </div>
+      <div class="w-1/5 lg:w-1/6 h-2/3 border-2 border-red-500 flex flex-col justify-center items-center rounded-se-3xl relative">
+        <img
+          src="img/community.png"
+          width="100%"
+          height="100%"
+          alt=""
+          class="bg-red-500 p-2 absolute h-8 w-8 md:h-10 md:w-10 lg:h-16 lg:w-16 -top-5 left-3 md:-top-5 md:left-5 lg:-top-8 lg:left-10 rounded-lg fill-white" />
+        <h1 class="text-white font-extrabold text-xl md:text-6xl font-blog">03</h1>
+        <h3 class="text-white font-bold text-sm md:text-xl font-blog">Clients</h3>
+      </div>
+      <div class="w-1/5 lg:w-1/6 h-2/3 border-2 border-dashed border-red-500 flex flex-col justify-center items-center rounded-se-3xl relative">
+        <img
+          src="img/experience.png"
+          width="100%"
+          height="100%"
+          alt=""
+          class="bg-red-500 p-2 absolute h-8 w-8 md:h-10 md:w-10 lg:h-16 lg:w-16 -top-5 left-3 md:-top-5 md:left-5 lg:-top-8 lg:left-10 rounded-lg fill-white" />
+        <h1 class="text-white font-extrabold text-xl md:text-6xl font-blog">03</h1>
+        <h3 class="text-white font-bold text-xs text-center md:text-xl font-blog">Years Experience</h3>
+      </div>
+      <div class="w-1/5 lg:w-1/6 h-2/3 border-2 border-dashed border-red-500 flex flex-col justify-center items-center rounded-se-3xl relative">
+        <img
+          src="img/flowchart.png"
+          width="100%"
+          height="100%"
+          alt=""
+          class="bg-red-500 p-2 absolute h-8 w-8 md:h-10 md:w-10 lg:h-16 lg:w-16 -top-5 left-3 md:-top-5 md:left-5 lg:-top-8 lg:left-10 rounded-lg fill-white" />
+        <h1 class="text-white font-extrabold text-xl md:text-6xl font-blog">03</h1>
+        <h3 class="text-white font-bold text-sm md:text-xl font-blog">Projects</h3>
+      </div>
+    </section>
+    <!-- service end -->
+    <!-- portofolio end -->
+    <section class="px-5 py-10 flex flex-col gap-5 md:px-20 md:py-20 lg:px-40 lg:py-24 md:gap-10">
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-5 md:gap-10">
+        <div class="w-full lg:w-1/2 text-white flex flex-col gap-2 justify-center">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-judul font-bold">Portfolio</h1>
+          <p class="text-sm md:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est doloribus labore suscipit debitis reiciendis.</p>
+        </div>
+        <div class="w-full md:w-full lg:w-2/3 text-white text-sm md:text-base justify-center flex lg:justify-end">
+          <button class="px-2 py-2 md:px-10 md:py-4 mx-0 hover:bg-red-500 bg-slate-900 rounded-tl-xl rounded-bl-xl">All Work</button>
+          <button class="px-2 py-2 md:px-10 md:py-4 mx-0 hover:bg-red-500 bg-slate-900">Personal Project</button>
+          <button class="px-2 py-2 md:px-10 md:py-4 mx-0 my-0 hover:bg-red-500 bg-slate-900 rounded-tr-xl rounded-br-xl">Profesional Project</button>
+        </div>
+      </div>
+      <div class="flex flex-wrap w-full h-auto gap-5 md:gap-10 lg:gap-5 justify-between">
+        <div class="flex min-w-full md:min-w-[45%] lg:min-w-[32%] h-80 bg-slate-100"></div>
+        <div class="flex min-w-full md:min-w-[45%] lg:min-w-[32%] h-80 bg-slate-100"></div>
+        <div class="flex min-w-full md:min-w-[45%] lg:min-w-[32%] h-80 bg-slate-100"></div>
+        <div class="flex min-w-full md:min-w-[45%] lg:min-w-[32%] h-80 bg-slate-100"></div>
+        <div class="flex min-w-full md:min-w-[45%] lg:min-w-[32%] h-80 bg-slate-100"></div>
+        <div class="flex min-w-full md:min-w-[45%] lg:min-w-[32%] h-80 bg-slate-100"></div>
+      </div>
+      <div class="w-full h-12 md:h-14 font-extrabold flex items-center text-lg md:text-xl justify-center">
+        <button class="w-28 md:w-36 h-full bg-red-500 rounded-lg">View</button>
+      </div>
+    </section>
+    <!-- portofolio start -->
+    <!-- experiences start -->
+    <section class="w-full px-5 py-10 md:px-20 md:py-20 lg:px-40 flex flex-col lg:py-24 bg-slate-900 gap-10">
+      <div class="text-white flex flex-col justify-center gap-5 items-center">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-judul font-bold">My Experiences</h1>
+        <p class="text-sm md:text-base text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempore a veritatis. Commodi, non temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam in laboriosam voluptates modi reprehenderit vero sit
+          sequi ipsam numquam. In.
+        </p>
+      </div>
+      <div class="w-full bg-slate-900 flex flex-col gap-10">
+        <div class="lg:h-32 flex flex-col md:flex-row justify-between text-white gap-10">
+          <div class="w-full md:w-1/5 font-judul px-10 md:pl-5 flex flex-col justify-center border-s-2 border-red-500">
+            <h1 class="text-2xl">Step 01</h1>
+            <p class="text-sm">
+              Enigma Camp (Trainee)<br />
+              November 2022-February 2023
+            </p>
+          </div>
+          <div class="w-full md:w-1/5 font-judul px-10 md:pl-5 py-4 border-e-2 md:border-e-0 md:text-start md:border-s-2 border-red-500 text-end">
+            <h1 class="text-2xl">Step 01</h1>
+            <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, iure non.</p>
+          </div>
+          <div class="w-full md:w-1/5 font-judul px-10 md:pl-5 flex flex-col justify-center border-s-2 border-red-500">
+            <h1 class="text-2xl">Step 01</h1>
+            <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, iure non.</p>
+          </div>
+        </div>
+        <div class="hidden md:h-16 w-full bg-slate-900 md:flex relative">
+          <div class="h-1 w-11/12 top-[30px] bg-red-500 absolute"></div>
+          <div class="h-full w-1/5 flex items-center relative flex">
+            <img
+              class="w-10/12 h-full"
+              src="./img/Group 1.png"
+              alt="" />
+            <p class="absolute text-black font-extrabold md:text-2xl lg:text-4xl font-blog left-[20%]">2022</p>
+          </div>
+          <div class="h-full w-1/5 flex items-center relative">
+            <img
+              class="w-10/12 h-full"
+              src="./img/Group 1.png"
+              alt="" />
+            <p class="absolute text-black font-extrabold md:text-2xl lg:text-4xl font-blog left-[20%]">2022</p>
+          </div>
+          <div class="h-full w-1/5 flex items-center relative">
+            <img
+              class="w-10/12 h-full"
+              src="./img/Group 1.png"
+              alt="" />
+            <p class="absolute text-black font-extrabold md:text-2xl lg:text-4xl font-blog left-[20%]">2022</p>
+          </div>
+          <div class="h-full w-1/5 flex items-center relative">
+            <img
+              class="w-10/12 h-full"
+              src="./img/Group 1.png"
+              alt="" />
+            <p class="absolute text-black font-extrabold md:text-2xl lg:text-4xl font-blog left-[20%]">2022</p>
+          </div>
+          <div class="h-full w-1/5 flex items-center relative">
+            <img
+              class="w-full h-full"
+              src="./img/Group 1.png"
+              alt="" />
+            <p class="absolute text-black font-extrabold md:text-2xl lg:text-4xl font-blog left-[20%]">2022</p>
+          </div>
+        </div>
+        <div class="lg:h-32 flex flex-col md:flex-row justify-evenly text-white gap-10">
+          <div class="w-full md:w-1/5 font-judul px-10 md:pl-5 py-4 border-e-2 md:border-e-0 md:text-start md:border-s-2 border-red-500 text-end">
+            <h1 class="text-2xl">Step 01</h1>
+            <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, iure non.</p>
+          </div>
+          <div class="w-full md:w-1/5 font-judul px-10 md:pl-5 flex flex-col justify-center border-s-2 border-red-500">
+            <h1 class="text-2xl">Step 01</h1>
+            <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, iure non.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- experiences end -->
+    <!-- contact start -->
+    <section class="w-full px-5 py-10 md:px-20 md:py-20 lg:px-40 flex flex-col lg:py-24 bg-primary">
+      <div class="flex flex-col lg:flex-row gap-10">
+        <!-- contact -->
+        <div class="text-white w-full lg:w-1/3">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-judul font-bold">Contact Us</h1>
+          <p class="text-sm md:text-base py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi incidunt itaque, reiciendis quisquam fugit!</p>
+          <div class="flex flex-col gap-7">
+            <div class="flex items-center gap-5">
+              <div class="flex justify-center items-center h-10 w-10 rounded-full bg-red-500">
+                <i class="fa-solid fa-phone-volume w-5 h-5"></i>
+              </div>
+              <div class="px-4">
+                <p class="text-sm">Call Me</p>
+                <h1 class="text-xl font-bold">+123 456 7890</h1>
+              </div>
+            </div>
+            <div class="flex items-center gap-5">
+              <div class="flex justify-center items-center h-10 w-10 rounded-full bg-red-500">
+                <i class="fa-solid fa-envelope h-5 w-5"></i>
+              </div>
+              <div class="px-4">
+                <p class="text-sm">Email</p>
+                <h1 class="text-xl font-bold">info@gmail.com</h1>
+              </div>
+            </div>
+            <div class="flex items-center gap-5">
+              <div class="flex justify-center items-center h-10 w-10 rounded-full bg-red-500">
+                <i class="fa-solid fa-location-dot w-5 h-5"></i>
+              </div>
+              <div class="px-4">
+                <p class="text-sm">Address</p>
+                <h1 class="text-xl font-bold">
+                  27 Division St, New York, <br />
+                  NY 10002, USA
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <!-- service start -->
-      <section class="w-screen h-72 bg-slate-500 py-0 px-0 flex justify-center items-center gap-10">
-        <div class="w-1/6 h-2/3 border-y-amber-700 border-dashed border-2 border-red-500 flex flex-col justify-center items-center rounded-se-[50px] relative">
-          <img
-            src="img/trophy.png"
-            width="50px"
-            height="50px"
-            alt=""
-            class="bg-red-500 p-2 absolute -top-7 left-10 rounded-lg fill-white" />
-          <h1 class="text-white font-extrabold text-6xl font-blog">03</h1>
-          <h3 class="text-white font-bold text-xl font-blog">Awards</h3>
+        <!-- drop line -->
+        <div class="w-full lg:w-2/3 text-white flex flex-col gap-5 mt-7 lg:mt-0">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-judul font-bold">Drop a Line</h1>
+          <div class="flex flex-col lg:flex-row gap-5">
+            <input
+              type="text"
+              class="h-16 w-full lg:w-1/2 outline-none border-2 border-slate-500 bg-primary rounded-md px-5"
+              placeholder="Name" />
+            <input
+              type="text"
+              class="h-16 w-full lg:w-1/2 outline-none border-2 border-slate-500 bg-primary rounded-md px-5"
+              placeholder="Email" />
+          </div>
+          <div class="flex flex-col lg:flex-row gap-5">
+            <input
+              type="text"
+              class="h-16 w-full lg:w-1/2 outline-none border-2 border-slate-500 bg-primary rounded-md px-5"
+              placeholder="Phone#" />
+            <input
+              type="text"
+              class="h-16 w-full lg:w-1/2 outline-none border-2 border-slate-500 bg-primary rounded-md px-5"
+              placeholder="Budged" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            class="bg-primary border-2 px-5 py-5 border-slate-500"
+            cols="30"
+            rows="6"
+            placeholder="Message"></textarea>
+          <button class="w-28 md:w-36 h-12 md:h-14 bg-red-500 rounded-lg">Submit</button>
         </div>
-        <div class="w-1/6 h-2/3 border-y-amber-700 border-2 border-red-500 flex flex-col justify-center items-center rounded-se-[50px] relative">
-          <img
-            src="img/community.png"
-            width="50px"
-            height="50px"
-            alt=""
-            class="bg-red-500 p-2 absolute -top-7 left-10 rounded-lg fill-white" />
-          <h1 class="text-white font-extrabold text-6xl font-blog">03</h1>
-          <h3 class="text-white font-bold text-xl font-blog">Clients</h3>
-        </div>
-        <div class="w-1/6 h-2/3 border-y-amber-700 border-2 border-dashed border-red-500 flex flex-col justify-center items-center rounded-se-[50px] relative">
-          <img
-            src="img/experience.png"
-            width="50px"
-            height="50px"
-            alt=""
-            class="bg-red-500 p-2 absolute -top-7 left-10 rounded-lg fill-white" />
-          <h1 class="text-white font-extrabold text-6xl font-blog">03</h1>
-          <h3 class="text-white font-bold text-xl font-blog">Years Experience</h3>
-        </div>
-        <div class="w-1/6 h-2/3 border-y-amber-700 border-2 border-dashed border-red-500 flex flex-col justify-center items-center rounded-se-[50px] relative">
-          <img
-            src="img/flowchart.png"
-            width="50px"
-            height="50px"
-            alt=""
-            class="bg-red-500 p-2 absolute -top-7 left-10 rounded-lg fill-white" />
-          <h1 class="text-white font-extrabold text-6xl font-blog">03</h1>
-          <h3 class="text-white font-bold text-xl font-blog">Projects</h3>
+      </div>
+    </section>
+    <!-- contact end -->
+    <!-- footer start -->
+    <footer class="w-full pt-10 md:pt-20 flex flex-col justify-center items-center lg:pt-24 bg-slate-900 gap-10">
+      <section class="text-white">
+        <div class="w-52 h-52 border border-white border-dotted rounded-full flex justify-center items-center flex-col gap-4">
+          <h1 class="text-3xl font-judul font-extrabold tracking-widest">Lets Say Hi</h1>
+          <p class="text-sm">iqbalemail@gmail.com</p>
+          <div class="text-white flex gap-4">
+            <a href="">
+              <i class="fa-brands fa-square-twitter w-6 h-6"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-facebook w-6 h-6"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-square-instagram w-6 h-6"></i>
+            </a>
+          </div>
         </div>
       </section>
-      <!-- service end -->
-      <!-- portofolio end -->
-      <section class="px-40 py-24 flex flex-col gap-10">
-        <div class="flex justify-between items-center gap-7">
-          <div class="w-1/3 text-white flex flex-col gap-5 justify-center">
-            <h1 class="text-5xl font-judul font-bold">Portfolio</h1>
-            <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est doloribus labore suscipit debitis reiciendis.</p>
-          </div>
-          <div class="w-2/3 text-white text-base flex justify-end ">
-            <button class="px-10 py-4 mx-0 hover:bg-red-500 bg-slate-900 rounded-tl-xl rounded-bl-xl">All Work</button>
-            <button class="px-14 py-4 mx-0 hover:bg-red-500 bg-slate-900">Personal Project</button>
-            <button class="px-10 py-4 mx-0 my-0 hover:bg-red-500 bg-slate-900 rounded-tr-xl rounded-br-xl">Profesional Project</button>
-          </div>
-        </div>
-        <div class="flex flex-wrap  w-full h-auto gap-5 justify-between ">
-          <div class="flex min-w-[32%] h-80 bg-slate-100">
-
-          </div>
-          <div class="flex min-w-[32%] h-80 bg-slate-100">
-
-          </div>
-          <div class="flex min-w-[32%] h-80 bg-slate-100">
-
-          </div>
-          <div class="flex min-w-[32%] h-80 bg-slate-100">
-
-          </div>
-          <div class="flex min-w-[32%] h-80 bg-slate-100">
-
-          </div>
-          <div class="flex min-w-[32%] h-80 bg-slate-100">
-
-          </div>
-        </div>
-      </section>
-      <!-- portofolio start -->
-    </main>
+      <div class="w-full flex justify-center text-white text-xs border-t border-t-slate-100 mb-0">
+        <p class="py-5"><i>&copy;</i>2023 - Form | All right reserved</p>
+      </div>
+    </footer>
+    <!-- footer end -->
   </body>
 </html>
