@@ -563,6 +563,10 @@ html {
   top: 30px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -838,10 +842,6 @@ html {
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
-.bg-primary\/60 {
-  background-color: rgb(17 17 17 / 0.6);
-}
-
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -857,6 +857,10 @@ html {
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
+.bg-slate-300\/10 {
+  background-color: rgb(203 213 225 / 0.1);
+}
+
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -865,46 +869,6 @@ html {
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.bg-white\/60 {
-  background-color: rgb(255 255 255 / 0.6);
-}
-
-.bg-white\/20 {
-  background-color: rgb(255 255 255 / 0.2);
-}
-
-.bg-white\/90 {
-  background-color: rgb(255 255 255 / 0.9);
-}
-
-.bg-white\/80 {
-  background-color: rgb(255 255 255 / 0.8);
-}
-
-.bg-white\/70 {
-  background-color: rgb(255 255 255 / 0.7);
-}
-
-.bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-white\/10 {
-  background-color: rgb(255 255 255 / 0.1);
-}
-
-.bg-slate-600\/10 {
-  background-color: rgb(71 85 105 / 0.1);
-}
-
-.bg-slate-300\/10 {
-  background-color: rgb(203 213 225 / 0.1);
 }
 
 .fill-white {
