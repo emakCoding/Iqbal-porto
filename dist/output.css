@@ -871,6 +871,14 @@ html {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
+.bg-primary\/10 {
+  background-color: rgb(17 17 17 / 0.1);
+}
+
+.bg-primary\/50 {
+  background-color: rgb(17 17 17 / 0.5);
+}
+
 .fill-white {
   fill: #fff;
 }
